@@ -1,6 +1,5 @@
 # Check list :page_facing_up:  for  - *Calculator class* 
 
----
 | №  | Check name                                         | Status |
 |----|----------------------------------------------------|--------|
 | 1  | Sum of two positive integers gives positive result | Passed |
