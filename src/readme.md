@@ -1,4 +1,4 @@
-# Check list :page_facing_up:  for  - *Calculator class* 
+# Check list :page_facing_up:  for  - *CalculatorApp class* 
 
 | №  | Check name                                         | Status |
 |----|----------------------------------------------------|--------|
