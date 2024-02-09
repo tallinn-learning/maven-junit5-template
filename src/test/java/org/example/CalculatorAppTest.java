@@ -75,7 +75,7 @@ public class CalculatorAppTest {
     @Test
     public void secondNumIsBiggerThanFirst () { //
         Calculator calculator = new Calculator();
-        boolean result = calculator.secondNumIsBiggerThanFirstNum(10,8);
+        boolean result = calculator.secondNumIsBiggerThanFirstNum(2,1);
         assertTrue(result);
     }
 
@@ -92,9 +92,4 @@ public class CalculatorAppTest {
         boolean result = calculator.firstNumIsNotEqualToSecondNum(5,7);
         assertTrue(result);
     }
-
-
-
-
-
 }
