@@ -12,6 +12,4 @@ public class CalculatorApp
         System.out.println(calculator.firstNumIsSmallerThanSecondNum(6,4));
         System.out.println(calculator.secondNumIsBiggerThanFirstNum(6,10));
     }
-
-
 }
