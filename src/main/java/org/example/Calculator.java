@@ -11,12 +11,11 @@ public class Calculator {
     }
 
     public boolean sumOfTwoNumbersIsEqlToEachOther (int num5, int num6) {
-
         return num5==num6;
     }
 
     public boolean firstNumIsSmallerThanSecondNum (int num8, int num9 ) {
-        return num9 > num8;
+      return num9 > num8;
     }
 
     public boolean secondNumIsBiggerThanFirstNum (int num10,int num11){
