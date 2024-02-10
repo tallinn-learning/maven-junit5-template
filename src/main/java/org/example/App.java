@@ -8,6 +8,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+
+        // create object
+        Calculator calculator = new Calculator();
+
+        // call method
+        System.out.println( "Run calculator: "  + calculator.calculateSumOfTwoIntegerValues(5, 0));
     }
 }
