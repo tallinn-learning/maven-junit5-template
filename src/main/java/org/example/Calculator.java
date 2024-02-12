@@ -25,4 +25,12 @@ public class Calculator {
     public boolean firstNumIsNotEqualToSecondNum (int num1, int num2){
         return num1 != num2;
     }
+    public double firstNumberDividedBySecondNumber (double num3,double num4){
+        return num3/num4;
+    }
+    public double multiplicationOfTwoNumbers (double num3, double num4){
+        return num3*num4;
+    }
+
+
 }

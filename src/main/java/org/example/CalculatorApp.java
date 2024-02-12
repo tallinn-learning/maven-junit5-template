@@ -11,5 +11,7 @@ public class CalculatorApp
         System.out.println(calculator.sumOfTwoNumbersIsEqlToEachOther(10,10));
         System.out.println(calculator.firstNumIsSmallerThanSecondNum(6,4));
         System.out.println(calculator.secondNumIsBiggerThanFirstNum(3,1));
+        System.out.println(calculator.firstNumberDividedBySecondNumber(-3.1,-4.1));
+        System.out.println(calculator.multiplicationOfTwoNumbers(4.2,0));
     }
 }
