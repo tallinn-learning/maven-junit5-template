@@ -33,9 +33,8 @@ public class AppTest {
     public void checkTwoPositiveValuesEquals(){
         //Calculator calculator = new Calculator();
         //assertEquals( 3 , 3);
-        assertEquals(-4, calculator.calculateSumOfTwoIntegerValues(-2, -2));
+        assertEquals(4, calculator.calculateSumOfTwoIntegerValues(2, 2));
     }
-
     @Test
     public void checkTwoValuesNotEquals(){
         assertNotEquals( 3 , 4);
@@ -54,5 +53,53 @@ public class AppTest {
         assertFalse( 4 < 2 );
     }
 
+    @Test
+    public void checkSumOfTwoPositiveInts(){
+        assertEquals(6, calculator.calculateSumOfTwoIntegerValues(4, 2));
+    }
+
+    @Test
+    public void checkSumOfTwoNegativeInts(){
+        assertEquals(-6, calculator.calculateSumOfTwoIntegerValues(-4, -2));
+    }
+    @Test
+    public void checkSumOfPositiveAndNegativeInts(){
+        assertEquals(2, calculator.calculateSumOfTwoIntegerValues(4, -2));
+    }
+
+    @Test
+    public void checkSumOfPositiveIntAndZero(){
+        assertEquals(4, calculator.calculateSumOfTwoIntegerValues(4, 0));
+    }
+
+    @Test
+    public void checkSumOfNegativeIntAndZero(){
+        assertEquals(-4, calculator.calculateSumOfTwoIntegerValues(-4, 0));
+    }
+
+    @Test
+    public void checkSubtractionOfTwoPositiveInts(){
+        assertEquals(2, calculator.calculateSubtractionOfTwoIntegers(4, 2));
+    }
+
+    @Test
+    public void checkSubtractionOfTwoNegativeInts(){
+        assertEquals(-6, calculator.calculateSumOfTwoIntegerValues(-4, -2));
+    }
+
+    @Test
+    public void checkSubtractionOfPositiveAndNegativeInts(){
+        assertEquals(-2, calculator.calculateSumOfTwoIntegerValues(-4, 2));
+    }
+
+    @Test
+    public void checkSubtractionOfPositiveAndZeroInts(){
+        assertEquals(4, calculator.calculateSumOfTwoIntegerValues(4, 0));
+    }
+
+    @Test
+    public void checkSubtractionOfNegativeAndZeroInts(){
+        assertEquals(-4, calculator.calculateSumOfTwoIntegerValues(-4, 0));
+    }
 
 }

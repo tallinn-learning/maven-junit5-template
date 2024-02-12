@@ -6,4 +6,7 @@ public class Calculator {
         //int sum = firstValue + secondValue;
         //return sum;
     }
+    public int calculateSubtractionOfTwoIntegers(int thirdValue, int fourthValue){
+        return thirdValue - fourthValue;
+    }
 }
