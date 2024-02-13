@@ -6,7 +6,7 @@
 | 2  | Sum of two negative numbers                          |gives negative result|Passed
 | 3  | Sum of Bigger number and zero number                 |gives value of first number|Passed
 | 4  | Sum of negative and positive numbers                 |gives negative or positive result|Passed
-| 5  | Subtraction of two numbers                           |gives smaller number in resultPassed
+| 5  | Subtraction of two numbers                           |gives smaller number in result|Passed
 | 6  | Subtraction of two equal numbers                     |gives zero in result|Passed
 | 7  | subtraction of bigger and zero value                 |gives value of first number|Passed
 | 8  | subtraction bigger of smaller number                 |gives negative result|Passed
