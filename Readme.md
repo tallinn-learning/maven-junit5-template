@@ -1,12 +1,12 @@
-| N   | Check case                                 | Test status |
-|-----|--------------------------------------------|-------------|
-| 1   | Sum of two positive INT-s                  |             |
-| 2   | Sum of two negative INT-s                  |             |
-| 3   | Sum of one positive and one negative INT   |             |
-| 4   | Sum of one positive Int and 0              |             |
-| 5   | Sum of one negative INT and 0              |             |
-| 6   | Subtraction of two positive INT-s          |             |
-| 7   | Subtraction of two negative INT-s          |             |
-| 8   | Subtraction of positive and Negative INT-s |             |
-| 9   | Subtraction of Positive INT and 0          |             |
-| 10  | Subtraction of Negative INT and 0          |             |
+| N  | Test Case                                  | Automated Y/N | Status |
+|----|--------------------------------------------|---------------|--------|
+| 1  | Sum of two positive int-s                  | Y             | Pass   |
+| 2  | Sum of two negative int-s                  | Y             | Pass   | 
+| 3  | Sum of positive int and 0                  | Y             | Pass   |
+| 4  | Sum of negative int and 0                  | Y             | Pass   |
+| 5  | Sum of positive and negative int-s         | Y             | Pass   |
+| 6  | Subtraction of two positive int-s          | Y             | Pass   |
+| 7  | Subtraction of two negative int-s          | Y             | Pass   |
+| 8  | Subtraction of positive and negative int-s | Y             | Pass   |
+| 9  | Subtraction of positive int and 0          | Y             | Pass   |
+| 10 | Subtraction of negative int and 0          | Y             | Pass   |    
