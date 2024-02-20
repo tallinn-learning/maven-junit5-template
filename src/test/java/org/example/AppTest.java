@@ -102,4 +102,19 @@ public class AppTest {
         assertEquals(-4, calculator.calculateSumOfTwoIntegerValues(-4, 0));
     }
 
+    @Test
+    public void isFirstValueGreaterThanSecond(){
+        assertFalse(calculator.returnCompareResult(6,4));
+    }
+
+    @Test
+    public void isSecondValueGreaterThanFirst(){
+        assertTrue(calculator.returnCompareResult(2,4));
+    }
+
+    @Test
+    public void checkIfBothValuesAreEqual(){
+        assertFalse(calculator.returnCompareResult(2,2));
+    }
+
 }

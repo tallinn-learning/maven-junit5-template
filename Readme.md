@@ -10,3 +10,6 @@
 | 8  | Subtraction of positive and negative int-s | Y             | Pass   |
 | 9  | Subtraction of positive int and 0          | Y             | Pass   |
 | 10 | Subtraction of negative int and 0          | Y             | Pass   |    
+| 11 | Comparison of two INT-s, first is greater  | Y             | Pass   | 
+| 12 | Comparison of two INT-s, second is greater | Y             | Pass   |
+| 13 | Comparison on two INT-s, both are equal    | Y             | Pass   |

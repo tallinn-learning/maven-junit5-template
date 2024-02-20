@@ -9,4 +9,8 @@ public class Calculator {
     public int calculateSubtractionOfTwoIntegers(int thirdValue, int fourthValue){
         return thirdValue - fourthValue;
     }
+
+    public boolean returnCompareResult(int a, int b) {
+        return a < b;
+    }
 }
