@@ -1,6 +1,6 @@
 package org.example;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,24 +9,42 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class AppTest {
 
-    @Test
-    public void checkTwoValuesEquals(){
+    private Calculator calculator;
 
-        //
-        //
-
-        assertEquals( 3 , 3);
+    @BeforeAll
+    static void setUpForAllTest(){
+        System.out.println("Setting up ALL");
+    }
+    @AfterAll
+    static void tearDownForAllTest(){
+        System.out.println("Closing up ALL");
+    }
+    @BeforeEach
+    void setUp(){
+        calculator = new Calculator();
+        System.out.println("Set up calculator object for new test");
+    }
+    @AfterEach
+    void tearDown (){
+        System.out.println("This is execution of post condition after each test");
     }
 
+    @Test
+    public void checkTwoPositiveValuesEquals(){
+        //Calculator calculator = new Calculator();
+        //assertEquals( 3 , 3);
+        assertEquals(4, calculator.calculateSumOfTwoIntegerValues(2, 2));
+    }
     @Test
     public void checkTwoValuesNotEquals(){
         assertNotEquals( 3 , 4);
     }
 
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( 3 == 3 );
+    public void shouldAnswerWithTrue() {
+        boolean isTrue = true;
+        assertTrue(isTrue);
+        //assertTrue( 3 == 3 );
     }
 
     @Test
@@ -35,5 +53,68 @@ public class AppTest {
         assertFalse( 4 < 2 );
     }
 
+    @Test
+    public void checkSumOfTwoPositiveInts(){
+        assertEquals(6, calculator.calculateSumOfTwoIntegerValues(4, 2));
+    }
+
+    @Test
+    public void checkSumOfTwoNegativeInts(){
+        assertEquals(-6, calculator.calculateSumOfTwoIntegerValues(-4, -2));
+    }
+    @Test
+    public void checkSumOfPositiveAndNegativeInts(){
+        assertEquals(2, calculator.calculateSumOfTwoIntegerValues(4, -2));
+    }
+
+    @Test
+    public void checkSumOfPositiveIntAndZero(){
+        assertEquals(4, calculator.calculateSumOfTwoIntegerValues(4, 0));
+    }
+
+    @Test
+    public void checkSumOfNegativeIntAndZero(){
+        assertEquals(-4, calculator.calculateSumOfTwoIntegerValues(-4, 0));
+    }
+
+    @Test
+    public void checkSubtractionOfTwoPositiveInts(){
+        assertEquals(2, calculator.calculateSubtractionOfTwoIntegers(4, 2));
+    }
+
+    @Test
+    public void checkSubtractionOfTwoNegativeInts(){
+        assertEquals(-6, calculator.calculateSumOfTwoIntegerValues(-4, -2));
+    }
+
+    @Test
+    public void checkSubtractionOfPositiveAndNegativeInts(){
+        assertEquals(-2, calculator.calculateSumOfTwoIntegerValues(-4, 2));
+    }
+
+    @Test
+    public void checkSubtractionOfPositiveAndZeroInts(){
+        assertEquals(4, calculator.calculateSumOfTwoIntegerValues(4, 0));
+    }
+
+    @Test
+    public void checkSubtractionOfNegativeAndZeroInts(){
+        assertEquals(-4, calculator.calculateSumOfTwoIntegerValues(-4, 0));
+    }
+
+    @Test
+    public void isFirstValueGreaterThanSecond(){
+        assertFalse(calculator.returnCompareResult(6,4));
+    }
+
+    @Test
+    public void isSecondValueGreaterThanFirst(){
+        assertTrue(calculator.returnCompareResult(2,4));
+    }
+
+    @Test
+    public void checkIfBothValuesAreEqual(){
+        assertFalse(calculator.returnCompareResult(2,2));
+    }
 
 }
