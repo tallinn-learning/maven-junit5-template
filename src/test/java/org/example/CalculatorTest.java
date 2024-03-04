@@ -1,10 +1,18 @@
 package org.example;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
+
+    @BeforeEach
+    void setUp() {
+
+        Calculator calculator = new Calculator();
+        System.out.println("Setting up calculator object for new test");
+    }
 
 // Homework 5, point 3.3
     @Test
@@ -82,6 +90,70 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertFalse(5 == 7);
     }
+
+    // Homework 6, point 2
+    @Test
+    public void checkingWhetherTwoPositiveNumbersAreDividedCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(3.828, calculator.calculateDivisionsOfFloatingPointNumbers(12.25, 3.2), 0.001);
+    }
+
+    @Test
+    public void checkingWhetherTwoNegativeNumbersAreDividedCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(6, calculator.calculateDivisionsOfFloatingPointNumbers(-7.8, -1.3), 0.001);
+    }
+
+    @Test
+    public void checkingWhetherAPositiveNumberIsDividedByItselfCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.calculateDivisionsOfFloatingPointNumbers(7.35, 7.35));
+
+    }
+    @Test
+    public void checkingWhetherANegativeNumberIsDividedByItselfCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.calculateDivisionsOfFloatingPointNumbers(-7.35, -7.35));
+
+    }
+
+    @Test
+    public void checkingTheCorrectnessOfMultiplicationOfTwoPositiveNumbers()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(54.022, calculator.calculateMultiplicationsOfFloatingPointNumbers(7.35, 7.35), 0.001);
+
+    }
+
+    @Test
+    public void checkingTheCorrectnessOfMultiplicationOfTwoNegativeNumbers()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(4.321, calculator.calculateMultiplicationsOfFloatingPointNumbers(-2.36, -1.831), 0.001);
+
+    }
+
+    @Test
+    public void checkingTheCorrectnessOfMultiplyingAPositiveNumberByZero()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.calculateMultiplicationsOfFloatingPointNumbers(3.23456, 0), 0.001);
+
+    }
+
+    @Test
+    public void checkingTheCorrectnessOfMultiplyingANegativeNumberByZero()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.calculateMultiplicationsOfFloatingPointNumbers(-3.23456, 0), 0.001);
+
+    }
+
+
 
 
 

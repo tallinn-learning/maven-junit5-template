@@ -16,5 +16,9 @@ public class App
         System.out.println("Run calculator" + calculator.theFirstValueIsBiggerThanTheSecondValue(5, 2));
         System.out.println("Run calculator" + calculator.theFirstValueIsBiggerThanTheSecondValue(5, 7));
 
+        //Homework 6, call method
+        System.out.println("Run calculate" + calculator.calculateDivisionsOfFloatingPointNumbers(12.6, 3.2));
+        System.out.println("Run calculate" + calculator.calculateMultiplicationsOfFloatingPointNumbers(5.51, 2.23));
+
     }
 }

@@ -16,4 +16,13 @@ public class Calculator {
         return firstValue > secondValue;
     }
 
+    // Homework 6, point 1
+    public double calculateDivisionsOfFloatingPointNumbers(double firstValue, double secondValue){
+        return firstValue / secondValue;
+    }
+
+    public double calculateMultiplicationsOfFloatingPointNumbers(double firstValue, double secondValue){
+        return firstValue * secondValue;
+    }
+
 }
