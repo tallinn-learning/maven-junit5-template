@@ -152,5 +152,9 @@ public class AppTest {
         assertEquals(25, calculator.calculateMultiplicationOfTwoValues(-5, -5, 0.001));
     }
 
+    @Test
+    public void multiplicationOfZeroValue(){
+        assertEquals(0, calculator.calculateMultiplicationOfTwoValues(0,5, 0.001));
+    }
 
 }

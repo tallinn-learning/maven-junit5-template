@@ -19,7 +19,7 @@
 | 16 | Check division with both negative values                    | Y             | Pass   |
 | 17 | Check division on zero                                      | Y             | Fail   |
 | 18 | Check multiplication of two positive values                 | Y             | Pass   |
-| 19 | Check multiplication of one positive and one negative value | N             |        |
-| 20 | Check multiplication of positive value and zero             | N             |        |
-| 21 | Check multiplication of both negative values                | N             |        |
+| 19 | Check multiplication of one positive and one negative value | Y             | Pass   |
+| 20 | Check multiplication of positive value and zero             | Y             | Pass   |
+| 21 | Check multiplication of both negative values                | Y             | Pass   |
 
