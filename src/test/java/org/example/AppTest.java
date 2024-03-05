@@ -114,7 +114,43 @@ public class AppTest {
 
     @Test
     public void checkIfBothValuesAreEqual(){
-        assertFalse(calculator.returnCompareResult(2,2));
+        assertFalse(calculator.returnCompareResult(4,2));
     }
+
+    @Test
+    public void division(){
+        assertEquals (1.0, calculator.calculateDivisionOfTwoValues (2.01,2.01, 0.001));
+    }
+
+    @Test
+    public void divisionWithOneNegativeValue(){
+        assertEquals(-2.0, calculator.calculateDivisionOfTwoValues(-4.02,2.01, 0.001));
+    }
+
+    @Test
+    public void divisionWithBothNegativeValues(){
+        assertEquals(1.0,  calculator.calculateDivisionOfTwoValues(-2.02, -2.02, 0.001));
+    }
+
+    @Test
+    public void testZeroDivision() {
+       assertEquals (0, calculator.calculateDivisionOfZeroValue(2.02,0.00));
+    }
+
+    @Test
+    public void multiplication(){
+        assertEquals(4.0804, calculator.calculateMultiplicationOfTwoValues(2.02,2.02,0.001));
+    }
+
+    @Test
+    public void multiplicationWithOneNegativeValue(){
+        assertEquals(-5, calculator.calculateMultiplicationOfTwoValues(1,-5,0.1));
+    }
+
+    @Test
+    public void multiplicationWithBothNegativeValues(){
+        assertEquals(25, calculator.calculateMultiplicationOfTwoValues(-5, -5, 0.001));
+    }
+
 
 }
