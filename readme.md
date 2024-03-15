@@ -41,9 +41,22 @@ Test cases for Calculator for calculateDivisionsOfFloatingPointNumbers method
 
 Test cases for Calculator for calculateMultiplicationsOfFloatingPointNumbers method
 
-| № | Check name                                               | Status | 
-|--|----------------------------------------------------------|------|
+| № | Check name                                                         | Status | 
+|---|--------------------------------------------------------------------|--------|
 | 1 | Checking the correctness of multiplication of two positive numbers | Passed |
 | 2 | Checking the correctness of multiplication of two negative numbers | Passed |
-| 3 | Checking the correctness of multiplying a positive number by zero  | Passed|
-| 4 | Checking the correctness of multiplying a negative number by zero  | Passed|
+| 3 | Checking the correctness of multiplying a positive number by zero  | Passed |
+| 4 | Checking the correctness of multiplying a negative number by zero  | Passed |
+
+Homework 9, point 2
+
+a) Test cases for check  order deletion
+b) Tools used: Swagger, Intellij Idea
+c) Inspection checklist
+
+| № | Check name                                                       | Status | 
+|---|------------------------------------------------------------------|--------|
+| 1 |Checking the successful deletion of an order, code 204| Passed |
+| 2 |Checking the deletion of a non-existent order, code 404| Passed |
+| 3 |Checking deletion with invalid request, code 400| Passed |
+| 4 |Unauthorized user deletion check, code 401| Passed |
