@@ -60,3 +60,9 @@ c) Inspection checklist
 | 2 |Checking the deletion of a non-existent order, code 404| Passed |
 | 3 |Checking deletion with invalid request, code 400| Passed |
 | 4 |Unauthorized user deletion check, code 401| Passed |
+
+HOMEWORK 10, point 2
+
+| № | Check name                                                                  | Status |
+|---|-----------------------------------------------------------------------------|--------|
+| 1 | Сhecking endpoint /test-ordest with parameters username and password  |Passed

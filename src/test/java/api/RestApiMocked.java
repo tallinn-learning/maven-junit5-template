@@ -2,14 +2,13 @@ package api;
 
 import com.google.gson.Gson;
 import dto.OrderDtoMocked;
-import dto.OrderDtoMockedBuilderAndFactory;
 import io.restassured.RestAssured;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import utils.RandomDataGenerator;
 
@@ -189,6 +188,33 @@ public class RestApiMocked {
                         .path("id");
 
         Assertions.assertEquals(orderId, responseOrderId);
+    }
+    // HOMEWORK 10
+    @ParameterizedTest
+    @CsvSource({
+            "Peter1, Password01",
+            "Maria2, Password02",
+            "Tuuli3, Password03",
+            "Ivan4, Password04"
+    })
+    public void testWithCsvSourceParameters(String username, String password){
+        String response = given().
+                log()
+                .all()
+                .when()
+                .get("/test-orders?username=" + username+"&password="+ password)
+//                .get("/test-orders/{orderId}", orderId)
+                .then()
+                .log()
+                .all()
+                .statusCode(HttpStatus.SC_OK)
+                .and()
+                .extract()
+                .path("apiKey");
+
+        Assertions.assertNotNull(response);
+
+
     }
 
     //// UROK 12 - peredelatj
